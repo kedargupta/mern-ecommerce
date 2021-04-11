@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import Rating from "../components/Rating"
 
 const Product = ({ product }) => {
   // Using destructuring to access props.product
@@ -15,9 +16,9 @@ const Product = ({ product }) => {
           </Card.Title>
         </a>
         <Card.Text as="div">
-          {product.rating} from {product.numReviews} reviews
+            <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
         </Card.Text>
-        <Card.Text as="h3">${product.price}</Card.Text>
+        <Card.Text as="h3" className="my-2">${product.price}</Card.Text>
       </Card.Body>
     </Card>
   );
