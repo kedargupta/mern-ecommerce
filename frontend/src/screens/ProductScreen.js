@@ -19,7 +19,7 @@ const ProductScreen = ({ match }) => {
         <Col md={6}>
           <Row>
             <Col>
-              <h3>{product.name}</h3>
+              <h3 className="text-center">{product.name}</h3>
             </Col>
           </Row>
           <Row>
@@ -44,8 +44,8 @@ const ProductScreen = ({ match }) => {
                 <ListGroup variant="flush">
                     <ListGroup.Item>
                         <Row>
-                            <Col md={4}>Status:</Col>
-                            <Col md={8}>
+                            <Col xs={4}>Status:</Col>
+                            <Col xs={8}>
                            <strong className={(product.countInStock > 0) ? "text-success":"text-danger"}>{(product.countInStock > 0) ? `In Stock (${product.countInStock})`:"Out of Stock"}</strong>
                             </Col>
                         </Row>
