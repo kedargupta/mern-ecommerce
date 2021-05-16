@@ -23,7 +23,7 @@ const ProductScreen = ({ match }) => {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col lg={6}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Rating
@@ -39,7 +39,7 @@ const ProductScreen = ({ match }) => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col md={6}>
+            <Col lg={6}>
               <Card>
                 <ListGroup variant="flush">
                     <ListGroup.Item>
